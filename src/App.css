@@ -118,3 +118,14 @@ button{font:inherit;cursor:pointer}
   .mins{display:none}
 }
 @media (prefers-reduced-motion:reduce){.pulse{animation:none}*{transition:none!important}}
+
+@media (max-width: 760px) {
+  .poster { padding: 48px 26px 90px; }
+  .timeline ol { gap: 26px; }
+  .timeline li { grid-template-columns: 52px 1fr; column-gap: 16px; }
+  .timeline li .ico { width: 52px; height: 52px; align-self: start; }
+  .timeline time { font-size: 0.95rem; }
+  .timeline h3 { font-size: 0.92rem; line-height: 1.4; margin: 2px 0 4px; }
+  .timeline p { font-size: 0.92rem; line-height: 1.5; }
+  .pill { padding: 10px 20px; }
+}

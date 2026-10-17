@@ -8,7 +8,7 @@ import "./App.css";
 
 const COUPLE = { bride: "Kakii", groom: "David" };
 const EVENT = { date: "Saturday, 24th October 2026", venue: "Bongani Gardens, Karen", attire: "Traditional Attire (Ntheo)" };
-const GIFT = { till: "0000000", name: "ACCOUNT NAME HERE" }; // change later
+const GIFT = { till: "0708083695", name: "Miriam Muthangya" }; // change later
 
 const PROGRAMME = [
   ["10:00 AM", "Arrival & Registration", "Guests are welcomed and seated.", Users],

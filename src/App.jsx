@@ -8,7 +8,7 @@ import "./App.css";
 
 const COUPLE = { bride: "Kakii", groom: "David" };
 const EVENT = { date: "Saturday, 24th October 2026", venue: "Bongani Gardens, Karen", attire: "Traditional Attire (Ntheo)" };
-const GIFT = { Mpesa: "0708083695", name: "Miriam Muthangya" }; 
+const GIFT = { Mpesa: "0708083695", name: "Miriam Muthangya" }; // change later
 
 const PROGRAMME = [
   ["10:00 AM", "Arrival & Registration", "Guests are welcomed and seated.", Users],
@@ -113,7 +113,7 @@ function Programme({ goSpeeches }) {
           <div className="gift" id="gifting">
             <p className="gift-label">Send a Gift via M-Pesa</p>
             <div className="till">
-              <div><small>M-Pesa / Till Number</small><strong>{GIFT.till}</strong></div>
+              <div><small>0708083695</small><strong>{GIFT.till}</strong></div>
               <button className="copy" onClick={copy}>{copied ? <Check size={14} /> : <Copy size={14} />}{copied ? "Copied" : "Copy"}</button>
             </div>
             <div className="till"><div><small>Account Name</small><strong>{GIFT.name}</strong></div></div>

@@ -1,0 +1,120 @@
+:root{
+  --brown:#6b3a22; --brown-2:#8a5a3b; --beige:#d9bfa8; --nude:#d8b3a0;
+  --cream:#f8efe3; --ink:#4a2a1a; --muted:#7a5a48;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#eadbc9;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-weight:300}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brown);outline-offset:2px}
+
+.poster{position:relative;max-width:1040px;margin:0 auto;min-height:100vh;padding:56px 44px 72px;overflow:hidden;
+  background:radial-gradient(ellipse at 85% 0%,#ead6c2 0 14%,transparent 15%),var(--cream)}
+.poster::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;
+  background:linear-gradient(100deg,var(--brown) 0 38%,#b98d6e 38.3% 39.2%,var(--beige) 39.5%)}
+.floral{position:absolute;width:230px;height:230px;pointer-events:none}
+.floral.tl{top:-30px;left:-40px}
+.floral.br{bottom:20px;right:-50px;transform:rotate(180deg);width:190px;height:190px;opacity:.9}
+.together{position:absolute;top:34px;right:34px;margin:0;text-align:center;font:400 .8rem/1.5 "Cinzel",serif;letter-spacing:.3em;color:var(--brown-2);text-transform:uppercase}
+
+.hero{text-align:center;position:relative;z-index:1}
+.kicker{font:400 .85rem "Cinzel",serif;letter-spacing:.35em;text-transform:uppercase;margin:0 0 4px}
+.names{margin:0;font:400 clamp(4.2rem,11vw,7.5rem)/.95 "Great Vibes",cursive;color:var(--brown);display:flex;flex-direction:column;align-items:center}
+.amp{font-size:.55em;color:var(--nude);margin:-4px 0}
+.tagline{display:flex;gap:10px;justify-content:center;align-items:center;font:400 .72rem "Cinzel",serif;letter-spacing:.3em;text-transform:uppercase;margin:14px 0 22px}
+.brush{display:inline-block;background:var(--brown);color:#fff;padding:10px 54px;
+  clip-path:polygon(0 18%,3% 0,97% 8%,100% 30%,98% 78%,100% 100%,4% 92%,0 70%)}
+.brush span{font:400 1.5rem "Cinzel",serif;letter-spacing:.2em;text-transform:uppercase}
+.brush.small{padding:6px 34px}.brush.small span{font-size:.8rem;letter-spacing:.18em}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:34px 0 30px;position:relative;z-index:1}
+.facts>div{display:flex;gap:12px;align-items:center;padding:0 14px}
+.facts>div+div{border-left:1px solid #c9a98f}
+.facts i,.ico{flex:none;width:48px;height:48px;border-radius:50%;background:var(--brown);color:#fff;display:grid;place-items:center}
+.facts svg{width:22px}.ico svg{width:22px}
+.facts p{margin:0;font:400 .92rem/1.35 "Cinzel",serif;letter-spacing:.06em;text-transform:uppercase}
+.facts small{display:block;font:400 .66rem "Jost",sans-serif;letter-spacing:.15em;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1.12fr .88fr;gap:0;position:relative;z-index:1}
+.rule-title{display:flex;align-items:center;gap:16px;margin:0 0 20px;font:400 1.5rem "Cinzel",serif;letter-spacing:.35em;text-transform:uppercase;font-weight:400}
+.rule-title::before,.rule-title::after{content:"";flex:1;height:1px;background:#c9a98f}
+.rule-title::before{max-width:40px}
+.timeline{padding-right:32px;border-right:1px solid #c9a98f}
+.timeline ol{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.timeline li{display:grid;grid-template-columns:52px 82px 1fr;gap:14px;align-items:center}
+.timeline .ico{width:52px;height:52px}
+.timeline time{font:400 .88rem "Cinzel",serif;letter-spacing:.06em}
+.timeline h3{margin:0;font:600 .86rem "Cinzel",serif;letter-spacing:.08em;text-transform:uppercase}
+.timeline p{margin:2px 0 0;font-size:.85rem;color:var(--ink)}
+
+.pill{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:8px 18px;border-radius:999px;border:1px solid var(--brown);background:transparent;color:var(--brown);font-weight:500;font-size:.8rem;letter-spacing:.04em}
+.pill.solid{background:var(--brown);color:#fff}
+.pill:hover{background:var(--brown);color:#fff}
+
+.gratitude{padding-left:32px;text-align:center}
+.script{margin:0 0 8px;font:400 3rem/1.1 "Great Vibes",cursive;color:var(--brown)}
+.gratitude>p{font:400 1.02rem/1.7 "Jost",sans-serif;margin:0 0 6px}
+.gratitude hr{border:0;height:1px;background:#c9a98f;margin:20px 12px}
+.gratitude .thanks{font:400 1.45rem/1.5 "Allura",cursive;color:var(--brown)}
+.with-love{font:400 .8rem "Cinzel",serif!important;letter-spacing:.25em;text-transform:uppercase;margin-top:14px!important}
+.sign{font:400 2.2rem "Great Vibes",cursive!important;color:var(--brown)}
+
+.gift{margin-top:26px;text-align:left}
+.gift-label{text-align:center;font:400 1.1rem "Cinzel",serif!important;letter-spacing:.12em;color:var(--brown)}
+.till{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fffaf3;border:1px solid #e3cdb8;border-radius:12px;padding:10px 14px;margin-bottom:8px}
+.till small{display:block;font-size:.68rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.till strong{font-weight:500;font-size:1.05rem}
+.copy{display:inline-flex;align-items:center;gap:5px;border:1px solid #e3cdb8;background:#fff;color:var(--brown);border-radius:8px;padding:5px 10px;font-size:.78rem}
+.gift .pill{width:100%;justify-content:center;padding:13px;margin-top:4px;font-size:.92rem}
+
+.theme{margin-top:26px}
+.dots{display:flex;gap:12px;justify-content:center;margin:12px 0 6px}
+.dots b{width:32px;height:32px;border-radius:50%}
+.theme p{margin:0;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
+
+/* Speeches page */
+.back{position:relative;z-index:2;display:inline-flex;gap:6px;align-items:center;border:0;background:none;color:var(--brown);font-weight:500;padding:0;margin-bottom:8px}
+.hero.compact .script.big{font-size:clamp(3rem,8vw,4.8rem);margin:4px 0 10px}
+.live{display:inline-flex;align-items:center;gap:8px;margin:0;font-size:.82rem;color:var(--muted)}
+.pulse{width:8px;height:8px;border-radius:50%;background:#3f8a4f;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.progress{height:6px;border-radius:6px;background:#e3cdb8;max-width:420px;margin:16px auto 8px;overflow:hidden}
+.progress span{display:block;height:100%;background:var(--brown);transition:width .4s}
+.stat{margin:0;font-size:.85rem}
+.speech-list{position:relative;z-index:1;list-style:none;max-width:640px;margin:28px auto 0;padding:0;display:grid;gap:10px}
+.speech-list li{display:grid;grid-template-columns:40px 1fr auto auto;gap:14px;align-items:center;padding:12px 16px;border-radius:14px;background:#fffaf3;border:1px solid #e3cdb8;transition:background .3s,opacity .3s}
+.num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font:400 .95rem "Cinzel",serif;border:1px solid var(--brown);color:var(--brown)}
+.speech-list h3{margin:0;font:500 1rem "Jost",sans-serif}
+.speech-list p{margin:2px 0 0;font-size:.82rem;color:var(--muted)}
+.mins{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.badge{display:inline-block;margin-top:4px;font-style:normal;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--brown);color:#fff;border-radius:999px;padding:2px 10px}
+.speech-list li.now{background:#f1dfcc;border-color:var(--brown);box-shadow:0 0 0 2px rgba(107,58,34,.15)}
+.speech-list li.now .num{background:var(--brown);color:#fff}
+.speech-list li.done{opacity:.55}
+.speech-list li.done h3{text-decoration:line-through}
+.speech-list li.done .num{background:var(--nude);border-color:var(--nude);color:#fff}
+.tick{width:40px;height:40px;border-radius:10px;border:1.5px solid var(--brown);background:#fff;color:transparent;display:grid;place-items:center}
+.tick.on{background:var(--brown);color:#fff}
+.mc-bar{position:relative;z-index:1;max-width:640px;margin:28px auto 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;font-size:.85rem}
+.mc-bar p{margin:0;width:100%;text-align:center}
+.mc-bar form{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center}
+.mc-bar input{padding:9px 14px;border-radius:999px;border:1px solid var(--brown);background:#fff;width:140px;font:inherit}
+.mc-bar .pill{margin-top:0}
+.err{color:#a3262a;width:100%;text-align:center}
+
+@media (max-width:760px){
+  .poster{padding:44px 20px 72px}
+  .floral{width:150px;height:150px}.floral.tl{top:-24px;left:-34px}
+  .together{top:18px;right:16px;font-size:.62rem}
+  .names{font-size:4.2rem}
+  .facts{grid-template-columns:1fr;gap:14px}
+  .facts>div+div{border-left:0;border-top:1px solid #c9a98f;padding-top:14px}
+  .split{grid-template-columns:1fr}
+  .timeline{padding-right:0;border-right:0}
+  .timeline li{grid-template-columns:48px 1fr;row-gap:2px}
+  .timeline li time{grid-column:2;grid-row:1}.timeline li>div{grid-column:2}.timeline li .ico{grid-row:1 / span 2;width:48px;height:48px}
+  .gratitude{padding:36px 0 0}
+  .speech-list li{grid-template-columns:36px 1fr auto;padding:12px}
+  .speech-list li .tick{grid-column:3;grid-row:1 / span 2;justify-self:end}
+  .mins{display:none}
+}
+@media (prefers-reduced-motion:reduce){.pulse{animation:none}*{transition:none!important}}
